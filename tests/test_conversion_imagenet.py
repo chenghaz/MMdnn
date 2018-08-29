@@ -21,6 +21,9 @@ class TestModels(CorrectnessTest):
 
     def __init__(self, test_table=None, methodName='test_nothing'):
         super(TestModels, self).__init__(methodName)
+        if test_table:
+            print ("Reset the test_table!", file=sys.stderr)
+            self.test_table = test_table
 
 
     @staticmethod
@@ -799,9 +802,7 @@ class TestModels(CorrectnessTest):
                 'vgg19'                 : [CaffeEmit, CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
                 'inception_v1'          : [CaffeEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit], # TODO: CntkEmit
                 'inception_v3'          : [CaffeEmit, CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-                'resnet_v1_50'          : [CaffeEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit], # TODO: CntkEmit
                 'resnet_v1_152'         : [CaffeEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit], # TODO: CntkEmit
-                'resnet_v2_50'          : [CaffeEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit], # TODO: CntkEmit
                 'resnet_v2_152'         : [CaffeEmit, CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
                 'mobilenet_v1_1.0'      : [CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit], # TODO: CaffeEmit(Crash)
                 'mobilenet_v2_1.0_224'  : [CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit], # TODO: CaffeEmit(Crash)

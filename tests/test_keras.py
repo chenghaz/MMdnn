@@ -9,12 +9,12 @@ def get_test_table():
     if six.PY2:
         return {
             'keras' : {
-                'vgg19'        : [CaffeEmit, CntkEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-                'inception_v3' : [CaffeEmit, CntkEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-                'resnet50'     : [CaffeEmit, CntkEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-                'densenet'     : [CaffeEmit, CntkEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-                'xception'     : [TensorflowEmit, KerasEmit, CoreMLEmit],
-                'mobilenet'    : [CoreMLEmit, KerasEmit, TensorflowEmit], # TODO: MXNetEmit
+                'vgg19'        : [TestModels.CaffeEmit, TestModels.CntkEmit, TestModels.CoreMLEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
+                'inception_v3' : [TestModels.CaffeEmit, TestModels.CntkEmit, TestModels.CoreMLEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
+                'resnet50'     : [TestModels.CaffeEmit, TestModels.CntkEmit, TestModels.CoreMLEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
+                'densenet'     : [TestModels.CaffeEmit, TestModels.CntkEmit, TestModels.CoreMLEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
+                'xception'     : [TestModels.TensorflowEmit, TestModels.KerasEmit, TestModels.CoreMLEmit],
+                'mobilenet'    : [TestModels.CoreMLEmit, TestModels.KerasEmit, TestModels.TensorflowEmit], # TODO: MXNetEmit
                 # 'nasnet'       : [TensorflowEmit, KerasEmit, CoreMLEmit],
             }},
     else:

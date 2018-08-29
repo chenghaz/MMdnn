@@ -15,13 +15,13 @@ def get_test_table():
 
     return { 'tensorflow' :
     {
-        'vgg19'                : [CaffeEmit, CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit],
-        'inception_v1'         : [CaffeEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-        'inception_v3'         : [CaffeEmit, CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-        'resnet_v1_152'        : [CaffeEmit, CoreMLEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-        'resnet_v2_152'        : [CaffeEmit, CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-        'mobilenet_v1_1.0'     : [CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
-        'mobilenet_v2_1.0_224' : [CoreMLEmit, CntkEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
+        'vgg19'                : [TestModels.CaffeEmit, TestModels.CoreMLEmit, TestModels.CntkEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit],
+        'inception_v1'         : [TestModels.CaffeEmit, TestModels.CoreMLEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
+        'inception_v3'         : [TestModels.CaffeEmit, TestModels.CoreMLEmit, TestModels.CntkEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
+        'resnet_v1_152'        : [TestModels.CaffeEmit, TestModels.CoreMLEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
+        'resnet_v2_152'        : [TestModels.CaffeEmit, TestModels.CoreMLEmit, TestModels.CntkEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
+        'mobilenet_v1_1.0'     : [TestModels.CoreMLEmit, TestModels.CntkEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
+        'mobilenet_v2_1.0_224' : [TestModels.CoreMLEmit, TestModels.CntkEmit, TestModels.KerasEmit, TestModels.MXNetEmit, TestModels.PytorchEmit, TestModels.TensorflowEmit],
         # 'nasnet-a_large'       : [MXNetEmit, PytorchEmit, TensorflowEmit],
         # 'inception_resnet_v2'  : [CaffeEmit, KerasEmit, MXNetEmit, PytorchEmit, TensorflowEmit],
     }}
